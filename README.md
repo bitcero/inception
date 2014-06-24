@@ -1,4 +1,4 @@
-Inception Theme
+Inception Theme v2.0
 =========
 
 __Inception__ is a modern and versatile XOOPS theme based on __[xThemes](https://github.com/bitcero/xthemes)__. Some of its features are:
@@ -35,3 +35,6 @@ __Notice:__ before to install Inception, Common Utilities, xThemes and MyWords m
 2. Go to xThemes and then to Themes Manager.
 3. Click on button "Install" below the screenshot of Inception.
 4. Now you can configure options and menus for Inception.
+
+### Documentation
+You can view the [wiki](/bitcero/inception/wiki) for more information about inception
