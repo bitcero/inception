@@ -1,0 +1,70 @@
+<div class="row clearfix i_home_container">
+    <div class="slider-holder">
+        <div class="flex-container">
+            <div class="flexslider">
+                <ul class="slides">
+                    <{foreach item=slide from=$theme->settings('slider')}>
+                    <li>
+                        <{if $slide.link!=''}>
+                            <a href="<{$slide.link}>"><img src="<{$slide.image}>" alt="<{$slide.title}>" /></a>
+                        <{else}>
+                            <img src="<{$slide.image}>" alt="<{$slide.title}>" />
+                        <{/if}>
+                        <{if $slide.title!=''}><h2><{$slide.title}></h2><{/if}>
+                        <{if $slide.content!=''}><p class="flex-caption"><{$slide.content}></p><{/if}>
+                    </li>
+                    <{/foreach}>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix i_home_featured">
+        <{posts cat=$theme->settings('featured') var=featured limit=4 len=0}>
+        <{foreach item=post from=$featured}>
+        <div class="four columns item_featured" style="position: relative; background-image: url('<{$xoops_imageurl}>include/thumbs.php?src=<{$post.image}>&amp;w=220&amp;h=220');">
+            <div class="band">
+                <span><{$utils->formatDate($post.time)}></span>
+                <span><{$post.title}></span>
+            </div>
+            <div class="caption">
+                <span><{$utils->formatDate($post.time)}></span>
+                <span><a href="<{$post.link}>"><{$post.title}></a></span>
+            </div>
+        </div>
+        <{/foreach}>
+    </div> 
+    <div class="row clearfix i_home_content">
+        <div class="four columns alpha i_home_left">
+            <h4><{$lang_from_blog}></h4>
+            <{posts cat=$theme->settings('blog') var=blog limit=$theme->settings('blog_limit') len=30}>
+            <ul class="post_list">
+            <{foreach item=post from=$blog}>
+                <li>
+                    <figure><a href="<{$post.link}>"><img src="<{$xoops_imageurl}>include/thumbs.php?src=<{$post.image}>&amp;w=70&amp;h=80" alt="<{$post.title}>" /></a></figure>
+                    <h5><a href="<{$post.link}>"><{$post.title}></a></h5>
+                    <p class="desc"><{$post.text}></p>
+                </li>
+            <{/foreach}>
+            </ul>
+            <a href="<{$theme->settings('blog_link')}>" class="button"><{$lang_viewblog}></a>
+        </div>
+        <div class="twelve columns omega i_home_right">
+            <h3><{$lang_recent_posts}></h3>
+            <{posts limit=$theme->settings('recent_limit') len=150 var="recents"}>
+            <ul class="post_list">
+            <{foreach item=post from=$recents}>
+                <li>
+                    <figure><a href="<{$post.link}>"><img src="<{$xoops_imageurl}>include/thumbs.php?src=<{$post.image}>&amp;w=150&amp;h=150" alt="<{$post.title}>" /></a></figure>
+                    <h4><a href="<{$post.link}>"><{$post.title}></a></h4>
+                    <span><{$utils->formatDate($post.time)}></span>
+                    <p class="desc"><{$post.text}></p>
+                    <a href="<{$post.link}>" class="button"><{$lang_readmore}></a>
+                </li>
+            <{/foreach}>
+            </ul>
+            <hr>
+            <a href="<{$theme->settings('posts_link')}>" class="button alternative"><{$lang_viewallposts}></a>
+            <br><br>
+        </div>
+    </div>
+</div>

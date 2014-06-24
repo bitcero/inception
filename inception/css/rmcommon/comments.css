@@ -1,0 +1,63 @@
+.comments_form{
+    padding: 10px 0;
+}
+.comments_form label.label{
+    display: block;
+    padding: 0 0 5px 0;
+    margin: 10px 0 0 0;
+}
+.comments_form input[type='text']{
+    width: 50%;
+    display: block;
+}
+.comments_form textarea{
+    width: 80%;
+    height: 150px;
+    display: block;
+}
+.comments_form input[type='submit']{
+	margin: 10px 0 0 0;
+}
+.comments_form .error{
+	display: block;
+	color: #F00;
+}
+
+/** Item **/
+.comment_item{
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	overflow: hidden;
+    background: #FFF;
+}
+.comment_item .head{
+    float: left;
+    padding: 4px 10px 3px 4px;
+}
+.comment_item .head > img{
+    padding: 1px;
+    border: 1px dashed rgba(0,0,0,0.2);
+    max-width: 60px!important;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 0 #CCC;
+}
+.comment_item .info{
+    padding: 10px 10px;
+    background: #ffffff; /* Old browsers */
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-left: 80px;
+}
+.comment_item .info > a{
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.comment_item .info .date{
+    font-size: 0.8em;
+    display: block;
+}
+.comment_item .info .text{
+    overflow: hidden;
+    margin-top: 15px;
+    color: #000;
+}

@@ -1,0 +1,351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inception Theme\n"
+"POT-Creation-Date: 2012-10-23 16:12-0600\n"
+"PO-Revision-Date: 2012-10-23 16:12-0600\n"
+"Last-Translator: Eduardo Cortés <i.bitcero@gmail.com>\n"
+"Language-Team: Red México <i.bitcero@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\xm\\themes\\inception\n"
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:24
+msgid "Select category..."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:35
+msgid "General Appearance"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:36
+msgid "Theme Colors"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:37
+msgid "Home Page"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:38
+msgid "Footer"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:39
+msgid "Twitter"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:46
+msgid "Site name:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:47
+msgid ""
+"This value will replace to site name configuration in general preferences."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:56
+msgid "Font for special text"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:57
+msgid "Please select the font that will be used in special texts."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:66
+msgid "Font family string for special text"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:67
+msgid "Indicate the css font-family string for special text."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:76
+msgid "Background image for website"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:77
+msgid ""
+"The image size must be large enough to be adjusted to the size of the screen."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:86
+msgid "Fixed background"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:96
+msgid "Background orientation"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:102
+msgid "Portrait"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:102
+msgid "Landscape"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:109
+msgid "Page background color:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:110
+msgid "Specify the color that will be used as background in all pages."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:119
+msgid "Color for top navigation links:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:129
+msgid "Background color 1 for main navigation:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:130
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:140
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:150
+msgid ""
+"Specify the first gradient color for main navigation. This color affects "
+"main navigation background, submenus background and buttons background."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:139
+msgid "Background color 2 for main navigation:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:149
+msgid "Background color 3 for main navigation:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:159
+msgid "Text color for main navigation:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:160
+msgid "This color will be used for color text in main navigation links."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:169
+msgid "Color for separator light border :"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:170
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:180
+msgid "This color will be used on separator for main navigation links."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:179
+msgid "Color for separator dark border :"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:189
+msgid "Color for site name text:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:199
+msgid "Color for left side content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:209
+msgid "Color for left side text:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:222
+msgid "Slider content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:223
+msgid "Select content for home page slider"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:230
+msgid "Select image for slider"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:231
+msgid "The image must have a size of 960 x 400 pixels."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:235
+msgid "Specify the link for this slider"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:240
+msgid "Text content"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:249
+msgid "Background color for slider titles:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:259
+msgid "Text color for slider titles:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:269
+msgid "MyWords featured category:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:270
+msgid ""
+"Select the category where featured posts will be published. Inception will "
+"format this information automatically."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:280
+msgid "MyWords blog category:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:281
+msgid ""
+"Select the category where blog posts will be published. Inception will "
+"format this information automatically."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:292
+msgid "Footer titles color:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:302
+msgid "Footer text color:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:312
+msgid "Footer links color:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:322
+msgid "First block title:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:323
+msgid "Title for first block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:327
+msgid "About Us"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:332
+msgid "First block content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:333
+msgid "Content for first block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:342
+msgid "Second block title:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:343
+msgid "Title for second block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:347
+msgid "Contact Us"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:352
+msgid "Second block content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:353
+msgid "Content for second block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:362
+msgid "Three block title:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:363
+msgid "Title for three block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:367
+msgid "Recent Tweets"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:372
+msgid "Three block content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:373
+msgid "Content for three block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:382
+msgid "Four block title:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:383
+msgid "Title for four block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:387
+msgid "What whe do"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:392
+msgid "Four block content:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:393
+msgid "Content for four block of footer."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:404
+msgid "Twitter username:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:405
+msgid "Specify the twitter username that will be used to show tweets."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:414
+msgid "Number of tweets:"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception-options.php:415
+msgid "Thw number of tweets that will be shown at time."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:16
+msgid ""
+"Inception is a stunning theme for XOOPS and based on xThemes system. This "
+"theme allows you to create a great site with several features and "
+"configurations. You have the control of thier appearance."
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:37
+msgid "Navigation Top"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:42
+msgid "Main Navigation"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:78
+msgid "From the blog"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:79
+msgid "Recent Posts"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:83
+msgid "Read More"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:84
+#, php-format
+msgid "%s Comments"
+msgstr ""
+
+#: C:\wamp\www\xm\themes\inception/assemble/inception.theme.php:85
+msgid "Where do you want to go?"
+msgstr ""
