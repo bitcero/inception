@@ -14,12 +14,9 @@ __Inception__ is a modern and versatile XOOPS theme based on __[xThemes](https:/
 
 ### Some examples
 
-| Example | Description |
-|:-------:|:------------|
-| [![Inception Sport](http://redmexico.com.mx/images/inception-01-th.jpg)](http://redmexico.com.mx/images/inception-01.jpg) | Inception with a sport look, solid background and a combination of diferent colors|
-| [![Inception with image background](http://redmexico.com.mx/images/inception-02-th.jpg)](http://redmexico.com.mx/images/inception-01.jpg) | Incpetion with a image background. Note how the image covers all the background space. |
-| [![Inception 03](http://redmexico.com.mx/images/inception-03-th.jpg)](http://redmexico.com.mx/images/inception-03.jpg) | Incpetion with a dark-teal colors combination. |
-| [![Inception 04](http://redmexico.com.mx/images/inception-04-th.jpg)](http://redmexico.com.mx/images/inception-04.jpg) | Inception with a light color combination that can be used in personal blogs. |
-| [![Inception 05](http://redmexico.com.mx/images/inception-05-th.jpg)](http://redmexico.com.mx/images/inception-05.jpg) | Inception with a color combination perfect for business. |
+| Example1 | Example 2 | Example 3 | Example 4 | Example 5 |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [![Inception Sport](http://redmexico.com.mx/images/inception-01-th.jpg)](http://redmexico.com.mx/images/inception-01.jpg) | [![Inception with image background](http://redmexico.com.mx/images/inception-02-th.jpg)](http://redmexico.com.mx/imagesinception-01.jpg) | [![Inception 03](http://redmexico.com.mx/images/inception-03-th.jpg)](http://redmexico.com.mx/images/inception-03.jpg) | [![Inception 04](http://redmexico.com.mx/images/inception-04-th.jpg)](http://redmexico.com.mx/images/inception-04.jpg) | [![Inception 05](http://redmexico.com.mx/images/inception-05-th.jpg)](http://redmexico.com.mx/images/inception-05.jpg) |
+| Sports | Image Background | Cool Photo | Blog | Business |
 
 As you can see, the colors combinations are infinites, also the posibilities.
