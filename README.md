@@ -20,3 +20,14 @@ __Inception__ is a modern and versatile XOOPS theme based on __[xThemes](https:/
 | Sports | Image Background | Cool Photo | Blog | Business |
 
 As you can see, the colors combinations are infinites, also the posibilities.
+
+### Requirements
+
+1. XOOPS 2.5.7
+2. Common Utilities 2.2
+3. xThemes 1.6
+4. MyWords 2.2
+
+### Install
+
+__Notice:__ before to install Inception, Common Utilities, xThemes and MyWords must be installed.
