@@ -37,4 +37,4 @@ __Notice:__ before to install Inception, Common Utilities, xThemes and MyWords m
 4. Now you can configure options and menus for Inception.
 
 ### Documentation
-You can view the [wiki](/bitcero/inception/wiki) for more information about inception
+You can view the [wiki](http://github.com/bitcero/inception/wiki) for more information about inception
