@@ -25,7 +25,7 @@ if(!function_exists("get_mywords_categories")){
         foreach($categos as $cat){
             $mw_categos[$cat['id_cat']] = $cat['name'];
         }
-        
+
         return $mw_categos;
         
     }
@@ -35,8 +35,7 @@ $sections = array(
     'appearance' => __('General Appearance','inception'),
     'colors' => __('Theme Colors','inception'),
     'home'  => __('Home Page','inception'),
-    'footer'  => __('Footer','inception'),
-    'twitter'  => __('Twitter','inception')
+    'footer'  => __('Footer','inception')
 );
 
 global $xoopsConfig;
@@ -53,8 +52,8 @@ $options['sitename'] = array(
 
 $options['sitename_font'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Font for special text','inception'),
-    'description'   => __('Please select the font that will be used in special texts.','inception'),
+    'caption'       => __('Font for site name','inception'),
+    'description'   => __('Please select the font that will be used in the site name.','inception'),
     'type'          => 'webfonts',
     'content'       => 'text',
     'length'        => '7',
@@ -63,8 +62,8 @@ $options['sitename_font'] = array(
 
 $options['sitename_font_family'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Font family string for special text','inception'),
-    'description'   => __('Indicate the css font-family string for special text.','inception'),
+    'caption'       => __('CSS ont family string for site name','inception'),
+    'description'   => __('Indicate the css font-family string that will be used in the site name.','inception'),
     'type'          => 'textbox',
     'content'       => 'text',
     'length'        => '50',
@@ -74,8 +73,8 @@ $options['sitename_font_family'] = array(
 /* TITLE FONT */
 $options['titles_font'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Font for special text','inception'),
-    'description'   => __('Please select the font that will be used in titles.','inception'),
+    'caption'       => __('Font for titles and buttons','inception'),
+    'description'   => __('Please select the font that will be used in titles and buttons.','inception'),
     'type'          => 'webfonts',
     'content'       => 'text',
     'length'        => '7',
@@ -84,8 +83,8 @@ $options['titles_font'] = array(
 
 $options['titles_font_family'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Font family string for special text','inception'),
-    'description'   => __('Indicate the css font-family string for titles.','inception'),
+    'caption'       => __('CSS font family string for titles and buttons','inception'),
+    'description'   => __('Indicate the css font-family string for titles and buttons.','inception'),
     'type'          => 'textbox',
     'content'       => 'text',
     'length'        => '50',
@@ -105,8 +104,8 @@ $options['body_font'] = array(
 
 $options['body_font_family'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Font family string for special text','inception'),
-    'description'   => __('Indicate the css font-family string for bpdy.','inception'),
+    'caption'       => __('Font family string for body','inception'),
+    'description'   => __('Indicate the css font-family string that will be used for body.','inception'),
     'type'          => 'textbox',
     'content'       => 'text',
     'length'        => '50',
@@ -185,7 +184,7 @@ $options['container_shadow_size'] = array(
 
 $options['container_shadow_opacity'] = array(
     'section'       => 'appearance',
-    'caption'       => __('Size of the container shadow','inception'),
+    'caption'       => __('Opacity of the container shadow','inception'),
     'description'   => __('Values from 0 to 1 (e.g. 0.1)', 'inception'),
     'type'          => 'textbox',
     'content'       => 'int',
@@ -515,7 +514,7 @@ $options['block-two-content'] = array(
 
 $options['block-three-title'] = array(
     'section'       => 'footer',
-    'caption'       => __('Three block title:','inception'),
+    'caption'       => __('Third block title:','inception'),
     'description'   => __('Title for three block of footer.','inception'),
     'type'          => 'textbox',
     'content'       => 'text',
@@ -525,7 +524,7 @@ $options['block-three-title'] = array(
 
 $options['block-three-content'] = array(
     'section'       => 'footer',
-    'caption'       => __('Three block content:','inception'),
+    'caption'       => __('Third block content:','inception'),
     'description'   => __('Content for three block of footer.','inception'),
     'type'          => 'textarea',
     'content'       => 'text',
@@ -535,7 +534,7 @@ $options['block-three-content'] = array(
 
 $options['block-four-title'] = array(
     'section'       => 'footer',
-    'caption'       => __('Four block title:','inception'),
+    'caption'       => __('Fourth block title:','inception'),
     'description'   => __('Title for four block of footer.','inception'),
     'type'          => 'textbox',
     'content'       => 'text',
@@ -545,34 +544,12 @@ $options['block-four-title'] = array(
 
 $options['block-four-content'] = array(
     'section'       => 'footer',
-    'caption'       => __('Four block content:','inception'),
+    'caption'       => __('Fourth block content:','inception'),
     'description'   => __('Content for four block of footer.','inception'),
     'type'          => 'textarea',
     'content'       => 'text',
     'length'        => '',
     'default'       => ''
-);
-
-/*          TWITTER
-**********************************/
-$options['twituser'] = array(
-    'section'       => 'twitter',
-    'caption'       => __('Twitter username:','inception'),
-    'description'   => __('Specify the twitter username that will be used to show tweets.','inception'),
-    'type'          => 'textbox',
-    'content'       => 'text',
-    'length'        => '20',
-    'default'       => '@redmexico'
-);
-
-$options['twitnum'] = array(
-    'section'       => 'twitter',
-    'caption'       => __('Number of tweets:','inception'),
-    'description'   => __('Thw number of tweets that will be shown at time.','inception'),
-    'type'          => 'textbox',
-    'content'       => 'text',
-    'length'        => '10',
-    'default'       => '5'
 );
 
 $settings = array(
