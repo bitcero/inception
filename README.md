@@ -14,4 +14,4 @@ __Inception__ is a modern and versatile XOOPS theme based on __[xThemes](https:/
 
 ### Some examples
 
-
+![Inception Sport](http://redmexico.com.mx/images/inception-01.jpg) ![Inception with image background](http://redmexico.com.mx/images/inception-02.jpg)
