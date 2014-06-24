@@ -29,5 +29,9 @@ As you can see, the colors combinations are infinites, also the posibilities.
 4. MyWords 2.2
 
 ### Install
-
 __Notice:__ before to install Inception, Common Utilities, xThemes and MyWords must be installed.
+
+1. Upload __inception__ folder to you "themes" directory in XOOPS.
+2. Go to xThemes and then to Themes Manager.
+3. Click on button "Install" below the screenshot of Inception.
+4. Now you can configure options and menus for Inception.
