@@ -165,6 +165,33 @@ $options['bgorientation'] = array(
     'options'       => array(0 => __('Portrait', 'inception'), 1 => __('Landscape', 'inception'))
 );
 
+$options['container_shadow'] = array(
+    'section'       => 'appearance',
+    'caption'       => __('Show shadow for theme container','inception'),
+    'description'   => '',
+    'type'          => 'yesno',
+    'content'       => 'int',
+    'default'       => '1'
+);
+
+$options['container_shadow_size'] = array(
+    'section'       => 'appearance',
+    'caption'       => __('Size of the container shadow','inception'),
+    'description'   => '',
+    'type'          => 'textbox',
+    'content'       => 'int',
+    'default'       => '4'
+);
+
+$options['container_shadow_opacity'] = array(
+    'section'       => 'appearance',
+    'caption'       => __('Size of the container shadow','inception'),
+    'description'   => __('Values from 0 to 1 (e.g. 0.1)', 'inception'),
+    'type'          => 'textbox',
+    'content'       => 'int',
+    'default'       => '0.1'
+);
+
 /*             COLORS
 ====================================*/
 $options['bgcolor'] = array(
@@ -406,6 +433,16 @@ $options['posts_link'] = array(
 );
 
 /* ========= FOOTER ============ */
+$options['footer_bg'] = array(
+    'section'       => 'footer',
+    'caption'       => __('Footer background color:','inception'),
+    'description'   => '',
+    'type'          => 'color',
+    'content'       => 'text',
+    'length'        => '7',
+    'default'       => '#000000'
+);
+
 $options['ftColor'] = array(
     'section'       => 'footer',
     'caption'       => __('Footer titles color:','inception'),

@@ -79,7 +79,7 @@ button.alternative{
     background-color: <?php echo $theme->settings('asidecolor'); ?>;
     padding: 6px 10px;
     display: inline-block;
-    color: <?php echo $theme->settings('asideTextColor'); ?>;
+    color: <?php echo $theme->settings('asideTextColor'); ?>!important;
     box-shadow: inset 0 1px 1px 0 #<?php echo $xtColor->lighten($theme->settings('asidecolor')); ?>;
     border: 1px solid #<?php echo $xtColor->darken($theme->settings('asidecolor')); ?>;
     border-radius: 2px;
@@ -108,6 +108,9 @@ button.alternative:hover{
     font-weight: 300;
     text-transform: uppercase;
     color: <?php echo $theme->settings('asideTextColor'); ?>;
+}
+a.button.alternative:link,a.button.alternative:active,a.button.alternative:visited,.button.alternative a{
+    color: <?php echo $theme->settings('asideTextColor'); ?>!important;
 }
 
 input[type="text"],
@@ -176,7 +179,7 @@ label{display: inline-block;}
     font-family: <?php echo $theme->settings('titles_font_family'); ?>;
     font-size: 14px;
     text-transform: uppercase;
-    border-left:    1px solid #<?php echo $xtColor->lighten( $theme->settings('headcolor') ); ?>;
+    border-left:    1px solid #<?php echo $xtColor->lighten( $theme->settings('headcolor'), 5 ); ?>;
     height: 70px;
 }
 #i-main-nav > li > a{
@@ -406,8 +409,8 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 /*               FOOTER
 ======================================*/
 #i-footer{
-    background: <?php echo $theme->settings('sbtcolor'); ?>;
-    border-radius: 0 0 4px 4px;
+    background: <?php echo $theme->settings('footer_bg'); ?>;
+    border-radius: 0 02px 2px;
 }
 #i-footer > div a{
     color: <?php echo $theme->settings('fLinks'); ?>;
@@ -420,7 +423,6 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 }
 #i-footer > div > h4{
     color: <?php echo $theme->settings('ftColor'); ?>;
-    text-shadow: 0 0 2px #000;
 }
 #i-footer > div > p{
     color: <?php echo $theme->settings('fColor'); ?>;
@@ -444,7 +446,9 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 /*             CONTENTS
 ==========================================*/
 #i-container{
-    box-shadow: 0 0 4px 2px rgba(0,0,0,0.1);
+    <?php if( $theme->settings('container_shadow') ): ?>
+    box-shadow: 0 0 <?php echo $theme->settings('container_shadow_size'); ?>px 2px rgba(0,0,0,<?php echo $theme->settings('container_shadow_opacity'); ?>);
+    <?php endif; ?>
 }
 #i-content{
     margin-bottom: 0;
