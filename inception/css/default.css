@@ -2,12 +2,12 @@ body{
     background-color: <?php echo $theme->settings('bgcolor'); ?>;
     <?php if($theme->settings('bgimage')!=''): ?>
         background-repeat: <?php echo $theme->settings('bgmode'); ?>;
-        <?php if($theme->settings('bgfixed') && $theme->settings('bgmode')!='repeat'): ?>
+        <?php if($theme->settings('bgfixed')): ?>
         background-position: center;
         background-attachment: fixed;
+        <?php endif; ?>
+        <?php if( $theme->settings('bgmode')!='repeat' ): ?>
         background-size: <?php echo $theme->settings('bgorientation') ? 'auto 100%' : '100%'; ?>;
-        background-size: cover;
-        <?php else: ?>
         background-position: center top;
         <?php endif; ?>
         background-image: url('<?php echo $theme->settings('bgimage'); ?>');
@@ -145,6 +145,9 @@ label{display: inline-block;}
     text-transform: uppercase;
     font-size: 12px;
     text-decoration: none;
+    <?php if( $theme->settings( 'topshadow') ): ?>
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    <?php endif; ?>
 }
 /* Site Header */
 .i-siteheader{

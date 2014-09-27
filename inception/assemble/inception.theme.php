@@ -2,7 +2,7 @@
 /*
 Theme name: Inception
 Theme URI: http://www.redmexico.com.mx
-Version: 1.0
+Version: 2.0
 Author: bitcero
 Author URI: http://www.bitcero.info
 */
@@ -14,7 +14,7 @@ class Inception extends XtTheme implements XtITheme
         $details = array(
             'name' => 'Inception Theme',
             'description' => __('Inception is a stunning theme for XOOPS, based on xThemes. This theme allows you to create a great site with several features and configurations. You have the control of every single aspect of the appearance..','inception'),
-            'version' => '2.0',
+            'version' => '2.0.5',
             'author' => 'Eduardo Cortes (bitcero)',
             'uri' => 'http://www.eduardocortes.mx',
             'author_uri' => 'http://www.eduardocortes.mx',

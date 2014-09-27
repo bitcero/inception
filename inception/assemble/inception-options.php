@@ -40,6 +40,10 @@ $sections = array(
 
 global $xoopsConfig;
 
+/*----------------------------------------
+       1. GENERAL APPEARANCE SECTION
+  ----------------------------------------*/
+
 $options['sitename'] = array(
     'section'       => 'appearance',
     'caption'       => __('Site name:','inception'),
@@ -191,8 +195,9 @@ $options['container_shadow_opacity'] = array(
     'default'       => '0.1'
 );
 
-/*             COLORS
-====================================*/
+/*----------------------------------------
+             2. COLORS SECTION
+  ----------------------------------------*/
 $options['bgcolor'] = array(
     'section'       => 'colors',
     'caption'       => __('Page background color:','inception'),
@@ -221,6 +226,15 @@ $options['linktop'] = array(
     'content'       => 'text',
     'length'        => '7',
     'default'       => '#FFF'
+);
+
+$options['topshadow'] = array(
+    'section'       => 'colors',
+    'caption'       => __('Display shadow for top navigation links:','inception'),
+    'description'   => '',
+    'type'          => 'yesno',
+    'content'       => 'int',
+    'default'       => 0
 );
 
 $options['headcolor'] = array(
@@ -303,8 +317,9 @@ $options['asideTextColor'] = array(
     'default'       => '#444444'
 );
 
-/*          HOME
-===============================*/
+/*----------------------------------------
+              3. HOME SECTION
+  ----------------------------------------*/
 
 $options['slider'] = array(
     'section'       => 'home',
@@ -431,7 +446,9 @@ $options['posts_link'] = array(
     'default'       => XOOPS_URL . '/modules/mywords/'
 );
 
-/* ========= FOOTER ============ */
+/*----------------------------------------
+             4. FOOTER SECTION
+  ----------------------------------------*/
 $options['footer_bg'] = array(
     'section'       => 'footer',
     'caption'       => __('Footer background color:','inception'),

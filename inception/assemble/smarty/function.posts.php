@@ -2,7 +2,7 @@
 /*
 Plugin name: Posts from MyWords
 Plugin URI: http://www.redmexico.com.mx
-Version: 1.0
+Version: 2.0
 Author: Eduardo Cortés (bitcero)
 Author URI: http://www.bitcero.info
 License: GPL v2

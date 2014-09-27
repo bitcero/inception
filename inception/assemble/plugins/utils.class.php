@@ -2,7 +2,7 @@
 /*
 Theme name: Inception
 Theme URI: http://www.redmexico.com.mx
-Version: 1.0
+Version: 2.0
 Author: bitcero
 Author URI: http://www.bitcero.info
 */
