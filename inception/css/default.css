@@ -1,18 +1,18 @@
 body{
     background-color: <?php echo $theme->settings('bgcolor'); ?>;
     <?php if($theme->settings('bgimage')!=''): ?>
-        background-repeat: <?php echo $theme->settings('bgmode'); ?>;
-        <?php if($theme->settings('bgfixed')): ?>
-        background-position: center;
-        background-attachment: fixed;
-        <?php endif; ?>
-        <?php if( $theme->settings('bgmode')!='repeat' ): ?>
-        background-size: <?php echo $theme->settings('bgorientation') ? 'auto 100%' : '100%'; ?>;
-        background-position: center top;
-        <?php endif; ?>
-        background-image: url('<?php echo $theme->settings('bgimage'); ?>');
+background-repeat: <?php echo $theme->settings('bgmode'); ?>;
+    <?php if($theme->settings('bgfixed')): ?>
+background-position: center;
+    background-attachment: fixed;
     <?php endif; ?>
-    font-family: <?php echo $theme->settings('body_font_family'); ?>;
+<?php if( $theme->settings('bgmode')!='repeat' ): ?>
+background-size: <?php echo $theme->settings('bgorientation') ? 'auto 100%' : '100%'; ?>;
+    background-position: center top;
+    <?php endif; ?>
+background-image: url('<?php echo $theme->settings('bgimage'); ?>');
+    <?php endif; ?>
+font-family: <?php echo $theme->settings('body_font_family'); ?>;
     font-size: <?php echo $theme->settings('body_font_size'); ?>;
 }
 abbr{
@@ -30,19 +30,19 @@ input[type='button'],
 input[type='reset'],
 button{
     <?php if($theme->settings('header_gradient')): ?>
-    <?php echo $xtColor->getCssGradient($theme->settings('headcolor') ); ?>
-    <?php else: ?>
-    background-color: <?php echo $theme->settings('headcolor'); ?>;
+<?php echo $xtColor->getCssGradient($theme->settings('headcolor') ); ?>
+<?php else: ?>
+background-color: <?php echo $theme->settings('headcolor'); ?>;
     <?php endif; ?>
-    padding: 6px 10px;
+padding: 6px 10px;
     display: inline-block;
     color: <?php echo $theme->settings('headtext'); ?>;
     box-shadow: inset 0 1px 1px 0 #<?php echo $xtColor->lighten($theme->settings('headcolor')); ?>;
     border: 1px solid #<?php echo $xtColor->darken($theme->settings('headcolor')); ?>;
     border-radius: 2px;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
     text-shadow: none; /*1px 1px 0 #000;*/
     font-family: <?php echo $theme->settings('titles_font_family'); ?>;
     font-weight: 300;
@@ -58,9 +58,9 @@ button:hover{
     box-shadow: inset 0 0px 6px 0px #<?php echo $xtColor->darken($theme->settings('headcolor')); ?>;
     border: 1px solid #<?php echo $xtColor->darken($theme->settings('headcolor'), 5); ?>;
     border-radius: 2px;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
     text-shadow: none; /*1px 1px 0 #000;*/
     font-weight: 300;
     text-transform: uppercase;
@@ -119,7 +119,7 @@ input[type="email"],
 textarea,
 select {
     margin-bottom: 5px!important;
-    background: #fff; 
+    background: #fff;
 }
 label{display: inline-block;}
 
@@ -146,17 +146,17 @@ label{display: inline-block;}
     font-size: 12px;
     text-decoration: none;
     <?php if( $theme->settings( 'topshadow') ): ?>
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     <?php endif; ?>
 }
 /* Site Header */
 .i-siteheader{
     <?php if($theme->settings('header_gradient')): ?>
-    <?php echo $xtColor->getCssGradient($theme->settings('headcolor') ); ?>
-    <?php else: ?>
-    background-color: <?php echo $theme->settings('headcolor'); ?>;
+<?php echo $xtColor->getCssGradient($theme->settings('headcolor') ); ?>
+<?php else: ?>
+background-color: <?php echo $theme->settings('headcolor'); ?>;
     <?php endif; ?>
-    border-radius: 2px 2px 0 0;
+border-radius: 2px 2px 0 0;
     margin-bottom: 0;
 }
 .i_sitename{
@@ -260,7 +260,7 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
     overflow: hidden;
 }
 .flexslider{
-    background: <?php echo $theme->settings('bgcolor'); ?>; 
+    background: <?php echo $theme->settings('bgcolor'); ?>;
 }
 .flexslider h2{
     position: absolute;
@@ -285,11 +285,11 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 }
 .i_home_featured{
     <?php if($theme->settings('featured_gradient')): ?>
-    <?php echo $xtColor->getCssGradient($theme->settings('featured_bg') ); ?>
-    <?php else: ?>
-    background-color: <?php echo $theme->settings('featured_bg'); ?>;
+<?php echo $xtColor->getCssGradient($theme->settings('featured_bg') ); ?>
+<?php else: ?>
+background-color: <?php echo $theme->settings('featured_bg'); ?>;
     <?php endif; ?>
-    padding: 10px 0;
+padding: 10px 0;
     position: relative;
     margin-bottom: 0;
 }
@@ -429,10 +429,10 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 }
 #i-footer > div > p{
     color: <?php echo $theme->settings('fColor'); ?>;
-    font-size: 12px;
+    font-size: 14px;
 }
 #i-footer > div > p > strong{
-    font-size: 14px; 
+    font-size: 14px;
 }
 #i-footer > div > img,
 #i-footer > div > p > img{
@@ -450,7 +450,7 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 ==========================================*/
 #i-container{
     <?php if( $theme->settings('container_shadow') ): ?>
-    box-shadow: 0 0 <?php echo $theme->settings('container_shadow_size'); ?>px 2px rgba(0,0,0,<?php echo $theme->settings('container_shadow_opacity'); ?>);
+box-shadow: 0 0 <?php echo $theme->settings('container_shadow_size'); ?>px 2px rgba(0,0,0,<?php echo $theme->settings('container_shadow_opacity'); ?>);
     <?php endif; ?>
 }
 #i-content{
@@ -460,9 +460,9 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 #i-content img{
     max-width: 100%;
     box-sizing: boder-box;
-        -moz-box-sizing: boder-box;
-        -webkit-box-sizing: boder-box;
-        -o-box-sizing: boder-box;
+    -moz-box-sizing: boder-box;
+    -webkit-box-sizing: boder-box;
+    -o-box-sizing: boder-box;
 }
 .i_content_left{
     margin: 0;
@@ -473,6 +473,9 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
 .i_content_left .i_block{
     margin-bottom: 20px;
 }
+.i_content_left .i_block a{
+    font-weight: bold;
+}
 .i_content_left .i_block h4{
     color: #FFF;
     font-family: <?php echo $theme->settings('titles_font_family'); ?>;
@@ -480,7 +483,7 @@ a > .sf-sub-indicator {  /* give all except IE6 the correct values */
     font-weight: 300;
 }
 .content_left .i_block .i_block_content{
-    
+
 }
 .i_content_left a{
     color: <?php echo $theme->settings('asideTextColor'); ?>;
@@ -584,7 +587,7 @@ table > tr:last-child > td, tbody > tr:last-child > td{
 }
 
 @media only screen and (max-width: 767px) {
-    
+
     #i-content{
         background: #FFF;
     }
@@ -595,23 +598,23 @@ table > tr:last-child > td, tbody > tr:last-child > td{
     }
     .i_content_left{background: <?php echo $theme->settings('asidecolor'); ?>;}
     .i_content_contents{background: #FFF;}
-    
+
     #i-footer img{
         max-width: 280px;
     }
-    
+
     .container .four.columns{
         width: 280px;
     }
-    
+
     .slider-holder{
         height: 103px!important;
     }
-    
+
     .flexslider .flex-caption, .i_mainnav{
         display: none;
     }
-    
+
     .flexslider h2{
         position: absolute;
         top: 50px;
@@ -624,7 +627,7 @@ table > tr:last-child > td, tbody > tr:last-child > td{
     .flexslider p.flex-caption{
         background-color: rgba(<?php echo $xtColor->hexToRGB( $theme->settings('caption_bg') ); ?>, 0.8)!important;
     }
-    
+
     .i_sitename{text-align: center;float: none; width: auto;}
     .i_sitename > h1{margin: 0;}
     #i-select-nav{
@@ -640,19 +643,19 @@ table > tr:last-child > td, tbody > tr:last-child > td{
         width: 280px;
         margin: 0 auto;
     }
-    
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    
+
     .slider-holder{
         height: 187px!important;
     }
-    
+
     .flexslider .flex-caption{
         display: none;
     }
-    
+
     .flexslider h2{
         position: absolute;
         top: 80px;
@@ -662,19 +665,47 @@ table > tr:last-child > td, tbody > tr:last-child > td{
         padding: 7px 14px 7px 7px;
         font-size: 16px;
     }
-    
+
     .i_home_left, #i-footer, .i_home_featured, .i_home_right, .i_content_left, .i_content_contents{
         margin: 0;
         padding: 10px;
         width: 400px!important;
     }
-    
+
     #i-footer img{
         max-width: 400px;
     }
-    
+
     .container .four.columns{
         width: 400px;
     }
-    
+
+}
+
+/**
+ * Pagination
+ */
+.pagination-container ul.pagination{
+    list-style: none;
+}
+.pagination-container ul.pagination li{
+    display: inline-block;
+}
+.pagination-container ul.pagination li a{
+    display: block;
+    padding: 10px;
+    background: <?php echo $theme->settings('headcolor'); ?>;
+    color: <?php echo $theme->settings( 'headtext' ); ?>;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.pagination-container ul.pagination li a:hover{
+    background: <?php echo $theme->settings('featured_bg'); ?>;
+}
+.pagination-container ul.pagination li.disabled span{
+    display: block;
+    padding: 10px;
+    font-size: 1.2em;
+    background: <?php echo $theme->settings('featured_bg'); ?>;
+    color: <?php echo $theme->settings( 'headtext' ); ?>;
 }

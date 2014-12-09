@@ -117,6 +117,18 @@ class Inception extends XtTheme implements XtITheme
         return $plugins;
         
     }
+
+    /**
+     * Specify the blocks positions that will be used by Inception
+     * @return array|bool
+     */
+    public function blocks_positions(){
+        $pos = array(
+            'inception_left'    => __('Inception Left Blocks','inception')
+        );
+
+        return $pos;
+    }
     
     /**
     * Show a little help about Inception

@@ -59,6 +59,7 @@ class InceptionUtilities
         
         $tc = TextCleaner::getInstance();
         $text = $tc->clean_disabled_tags($text);
+        $text = preg_replace( "@<iframe[^>]*?>.*?</iframe>@si", '', $text );
         $text = preg_replace("/<p>/",'', $text);
         $text = preg_replace("/<\/p>/",'', $text);
         
