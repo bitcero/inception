@@ -18,4 +18,3 @@ $theme = $xtAssembler->theme();
 $xtColor = new XtColor();
 
 include 'default.css';
-?>

@@ -9,11 +9,11 @@ Author URI: http://www.bitcero.info
 
 class Inception extends XtTheme implements XtITheme
 {
-    public function details(){
-        
+    public function details()
+    {
         $details = array(
             'name' => 'Inception Theme',
-            'description' => __('Inception is a stunning theme for XOOPS, based on xThemes. This theme allows you to create a great site with several features and configurations. You have the control of every single aspect of the appearance..','inception'),
+            'description' => __('Inception is a stunning theme for XOOPS, based on xThemes. This theme allows you to create a great site with several features and configurations. You have the control of every single aspect of the appearance..', 'inception'),
             'version' => '2.0.5',
             'author' => 'Eduardo Cortes (bitcero)',
             'uri' => 'http://www.eduardocortes.mx',
@@ -33,37 +33,37 @@ class Inception extends XtTheme implements XtITheme
         );
         
         return $details;
-        
     }
     
     /**
     * This theme supports xThemes 1.5 menus
     */
-    public function haveMenus(){
-        
+    public function haveMenus()
+    {
         $menu['top'] = array(
             'title' => __('Navigation Top', 'inception'),
             'levels' => 1
         );
         
         $menu['main'] = array(
-            'title' => __('Main Navigation','inception'),
+            'title' => __('Main Navigation', 'inception'),
             'levels' => 3
         );
         
         return $menu;
-        
     }
     
     /**
     * Configuration options
     */
-    public function options(){
+    public function options()
+    {
         $options = include('inception-options.php');
         return $options;
     }
     
-    public function init(){
+    public function init()
+    {
         global $rmTpl, $xtAssembler, $xoopsTpl;
         
         $rmTpl->add_style('base.css', 'inception', array(), 'theme');
@@ -73,41 +73,43 @@ class Inception extends XtTheme implements XtITheme
         $rmTpl->add_style('superfish.css', 'inception', array(), 'theme');
         
         // Scripts
-        $rmTpl->add_script('hoverIntent.js','inception', array(), 'theme');
-        $rmTpl->add_script('superfish.js','inception', array(), 'theme');
-        $rmTpl->add_script('supersubs.js','inception', array(), 'theme');
-        $rmTpl->add_script('inception.js','inception', array(), 'theme');
+        $rmTpl->add_script('hoverIntent.js', 'inception', array(), 'theme');
+        $rmTpl->add_script('superfish.js', 'inception', array(), 'theme');
+        $rmTpl->add_script('supersubs.js', 'inception', array(), 'theme');
+        $rmTpl->add_script('inception.js', 'inception', array(), 'theme');
         
-        if($xtAssembler->isHome()){
+        if ($xtAssembler->isHome()) {
             $rmTpl->add_style('flexslider.css', 'inception', array(), 'theme');
-            $rmTpl->add_script('jquery.flexslider-min.js','inception', array(), 'theme');
+            $rmTpl->add_script('jquery.flexslider-min.js', 'inception', array(), 'theme');
             
             // Language strings
-            $xoopsTpl->assign('lang_from_blog',__('From the blog','inception'));
-            $xoopsTpl->assign('lang_recent_posts',__('Recent Posts','inception'));
-            $xoopsTpl->assign('lang_viewallposts',__('View all posts','inception'));
-            $xoopsTpl->assign('lang_viewblog',__('View the Blog','inception'));
-
+            $xoopsTpl->assign('lang_from_blog', __('From the blog', 'inception'));
+            $xoopsTpl->assign('lang_recent_posts', __('Recent Posts', 'inception'));
+            $xoopsTpl->assign('lang_viewallposts', __('View all posts', 'inception'));
+            $xoopsTpl->assign('lang_viewblog', __('View the Blog', 'inception'));
         }
         
-        $xoopsTpl->assign('lang_readmore',__('Read More','inception'));
-        $xoopsTpl->assign('lang_comments',__('%s Comments','inception'));
-        $xoopsTpl->assign('lang_goto',__('Where do you want to go?','inception'));
+        $xoopsTpl->assign('lang_readmore', __('Read More', 'inception'));
+        $xoopsTpl->assign('lang_comments', __('%s Comments', 'inception'));
+        $xoopsTpl->assign('lang_goto', __('Where do you want to go?', 'inception'));
         
         // Include webfont
-        if ( $this->settings('sitename_font') != '' )
+        if ($this->settings('sitename_font') != '') {
             $rmTpl->add_head('<link rel="stylesheet" type="text/css" href="'.$this->settings('sitename_font').'" media="all" />');
-        if ( $this->settings( 'titles_font_family') != '' && $this->settings( 'titles_font_family') != $this->settings( 'sitename_font_family') )
+        }
+        if ($this->settings('titles_font_family') != '' && $this->settings('titles_font_family') != $this->settings('sitename_font_family')) {
             $rmTpl->add_head('<link rel="stylesheet" type="text/css" href="'.$this->settings('titles_font').'" media="all" />');
-        if ( $this->settings('body_font') != '' )
+        }
+        if ($this->settings('body_font') != '') {
             $rmTpl->add_head('<link rel="stylesheet" type="text/css" href="'.$this->settings('body_font').'" media="all" />');
+        }
     }
     
     /**
     * This function allows to register plugins in xtAssembler
     */
-    public function register(){
-        
+    public function register()
+    {
         $plugins[] = array(
             'name'  =>  'InceptionUtilities',     // Class name
             'var'   =>  'utils',            // Smarty var to assign object (<{$thumbs->method()})
@@ -115,16 +117,16 @@ class Inception extends XtTheme implements XtITheme
         );
         
         return $plugins;
-        
     }
 
     /**
      * Specify the blocks positions that will be used by Inception
      * @return array|bool
      */
-    public function blocks_positions(){
+    public function blocks_positions()
+    {
         $pos = array(
-            'inception_left'    => __('Inception Left Blocks','inception')
+            'inception_left'    => __('Inception Left Blocks', 'inception')
         );
 
         return $pos;
@@ -133,21 +135,20 @@ class Inception extends XtTheme implements XtITheme
     /**
     * Show a little help about Inception
     */
-    public function controlPanel(){
+    public function controlPanel()
+    {
         global $rmc_config, $rmTpl, $xtFunctions;
 
         $rmTpl->add_theme_style('dashboard.css', 'inception');
         xoops_cp_header();
         
         $dir = XOOPS_THEME_PATH.'/inception/lang/';
-        if(!is_file($dir.$rmc_config['lang'].'.php')){
+        if (!is_file($dir.$rmc_config['lang'].'.php')) {
             include $dir.$rmc_config['lang'].'.php';
         } else {
             include $dir.'en.php';
         }
         
         xoops_cp_footer();
-        
     }
-    
 }

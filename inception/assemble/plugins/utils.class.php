@@ -9,22 +9,23 @@ Author URI: http://www.bitcero.info
 
 class InceptionUtilities
 {
-    public function formatDate($time){
-        
+    public function formatDate($time)
+    {
         $tf = new RMTimeFormatter('', "%d% %M% %Y%");
         return $tf->format($time);
-        
     }
     
     /**
     * Allows to create the twitter plugin when available
     * based on content
     */
-    public function preform($text){
+    public function preform($text)
+    {
         global $xtAssembler;
         
-        if($text!='{RECENT-TWEETS}')
+        if ($text!='{RECENT-TWEETS}') {
             return $text;
+        }
         
         $ret = '<div class="twitter">';
         $ret .= '<div class="twitter-whole"> ';
@@ -33,21 +34,21 @@ class InceptionUtilities
         $ret .= '<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name='.$xtAssembler->theme()->settings('twituser').'&include_rts=1&callback=twitterCallback2&count='.$xtAssembler->theme()->settings('twitnum').'"></script>';
         $ret .= '</div>    ';
         return $ret;
-        
     }
     
-    public function createBg($color){
+    public function createBg($color)
+    {
+        $color = str_replace("#", '', $color);
         
-        $color = str_replace("#",'', $color);
+        if (file_exists(XOOPS_CACHE_PATH.'/inception/bg'.$color.'.png')) {
+            return 'bg'.$color;
+        }
         
-        if(file_exists(XOOPS_CACHE_PATH.'/inception/bg'.$color.'.png'))
-            return 'bg'.$color; 
+        $r = hexdec(substr($color, 0, 2));
+        $g = hexdec(substr($color, 2, 2));
+        $b = hexdec(substr($color, 4, 2));
         
-        $r = hexdec(substr($color,0,2));
-        $g = hexdec(substr($color,2,2));
-        $b = hexdec(substr($color,4,2));
-        
-        $img = imagecreate(240,10);
+        $img = imagecreate(240, 10);
         $bg = imagecolorallocate($img, $r, $g, $b);
         imagepng($img, XOOPS_CACHE_PATH.'/inception/bg'.$color.'.png');
         imagecolordeallocate($bg);
@@ -55,16 +56,14 @@ class InceptionUtilities
         return 'bg'.$color;
     }
     
-    public function extractText($text){
-        
+    public function extractText($text)
+    {
         $tc = TextCleaner::getInstance();
         $text = $tc->clean_disabled_tags($text);
-        $text = preg_replace( "@<iframe[^>]*?>.*?</iframe>@si", '', $text );
-        $text = preg_replace("/<p>/",'', $text);
-        $text = preg_replace("/<\/p>/",'', $text);
+        $text = preg_replace("@<iframe[^>]*?>.*?</iframe>@si", '', $text);
+        $text = preg_replace("/<p>/", '', $text);
+        $text = preg_replace("/<\/p>/", '', $text);
         
         return $text;
-        
     }
-    
 }
