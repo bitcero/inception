@@ -1,6 +1,6 @@
 <?php
 $xoopsOption['nocommon'] = 1;
-include dirname(dirname(dirname(dirname(__FILE__)))).'/mainfile.php';
+include dirname(dirname(dirname(__DIR__))) . '/mainfile.php';
 
 define('DEBUG_ON', false);                                // Enable debug logging to web server error log (STDERR)
 define('DEBUG_LEVEL', 1);                                // Debug level 1 is less noisy and 3 is the most noisy
@@ -16,7 +16,7 @@ define('FILE_CACHE_TIME_BETWEEN_CLEANS', 86400);    // How often the cache is cl
 define('FILE_CACHE_MAX_FILE_AGE', 86400);                // How old does a file have to be to be deleted from the cache
 define('FILE_CACHE_SUFFIX', '.timthumb.txt');            // What to put at the end of all files in the cache directory so we can identify them
 define('FILE_CACHE_PREFIX', 'timthumb');                // What to put at the beg of all files in the cache directory so we can identify them
-define('FILE_CACHE_DIRECTORY', XOOPS_VAR_PATH.'/caches/xoops_cache/inception');                // Directory where images are cached. Left blank it will use the system temporary directory (which is better for security)
+define('FILE_CACHE_DIRECTORY', XOOPS_VAR_PATH . '/caches/xoops_cache/inception');                // Directory where images are cached. Left blank it will use the system temporary directory (which is better for security)
 define('MAX_FILE_SIZE', 10485760);                        // 10 Megs is 10485760. This is the max internal or external file size that we'll process.
 define('CURL_TIMEOUT', 20);                            // Timeout duration for Curl. This only applies if you have Curl installed and aren't using PHP's default URL fetching mechanism.
 define('WAIT_BETWEEN_FETCH_ERRORS', 3600);                //Time to wait between errors fetching remote file
@@ -36,7 +36,6 @@ define('DEFAULT_ZC', 1);                                    // Default zoom/crop
 define('DEFAULT_F', '');                                    // Default image filters. Allows overrid in timthumb-config.php
 define('DEFAULT_S', 0);                                    // Default sharpen value. Allows overrid in timthumb-config.php
 define('DEFAULT_CC', 'ffffff');                            // Default canvas colour. Allows overrid in timthumb-config.php
-
 
 //Image compression is enabled if either of these point to valid paths
 
@@ -92,16 +91,15 @@ define('WEBSHOT_SCREEN_Y', '768');            //768 works ok
 define('WEBSHOT_COLOR_DEPTH', '24');            //I haven't tested anything besides 24
 define('WEBSHOT_IMAGE_FORMAT', 'png');            //png is about 2.5 times the size of jpg but is a LOT better quality
 define('WEBSHOT_TIMEOUT', '20');            //Seconds to wait for a webshot
-define('WEBSHOT_USER_AGENT', "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.18) Gecko/20110614 Firefox/3.6.18"); //I hate to do this, but a non-browser robot user agent might not show what humans see. So we pretend to be Firefox
+define('WEBSHOT_USER_AGENT', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.18) Gecko/20110614 Firefox/3.6.18'); //I hate to do this, but a non-browser robot user agent might not show what humans see. So we pretend to be Firefox
 define('WEBSHOT_JAVASCRIPT_ON', true);            //Setting to false might give you a slight speedup and block ads. But it could cause other issues.
 define('WEBSHOT_JAVA_ON', false);            //Have only tested this as fase
 define('WEBSHOT_PLUGINS_ON', true);            //Enable flash and other plugins
 define('WEBSHOT_PROXY', '');                //In case you're behind a proxy server.
 define('WEBSHOT_XVFB_RUNNING', false);            //ADVANCED: Enable this if you've got Xvfb running in the background.
 
-
 // If ALLOW_EXTERNAL is true and ALLOW_ALL_EXTERNAL_SITES is false, then external images will only be fetched from these domains and their subdomains.
-$ALLOWED_SITES = array(
+$ALLOWED_SITES = [
         'flickr.com',
         'staticflickr.com',
         'picasa.com',
@@ -111,4 +109,4 @@ $ALLOWED_SITES = array(
         'imgur.com',
         'imageshack.us',
         'tinypic.com',
-    );
+    ];

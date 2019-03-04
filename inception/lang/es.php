@@ -46,7 +46,7 @@
     <p>Una vez cuentes con el programa, localiza la carpeta "<em>lang</em>" dentro del tema Inception. Podrás ver que existen archivos <em>mo</em> y archivos <em>po</em>.
     Duplica el archivo llamado <em>en.po</em>, renombrálo con el nombre de tu idioma (ej. br.po) y abrelo con PoEdit.</p>
     
-    <img src="<?php echo XOOPS_THEME_URL; ?>/inception/images/poedit.jpg" alt="PoEdit" />
+    <img src="<?php echo XOOPS_THEME_URL; ?>/inception/images/poedit.jpg" alt="PoEdit">
     
     <p>Ahora solo deberás traducir cada línea a tu propio idioma. Cuando hayas terminado guarda el archivo. Podrás observar que se ha creado un nuevo archivo "mo" con el nombre
     del archivo po editado.</p>
