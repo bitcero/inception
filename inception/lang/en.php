@@ -62,7 +62,7 @@
                 <p>Once you have the program, locate the folder "<em>lang</em>" in Inception theme. You can see <em>mo</em> and <em>po</em> files.
                     Duplicate the file named <em>en.po</em>, rename it with the name of your language(eg br.po) and open it with PoEdit.</p>
 
-                <img src="<?php echo XOOPS_THEME_URL; ?>/inception/images/poedit.jpg" alt="PoEdit" class="img-responsive" />
+                <img src="<?php echo XOOPS_THEME_URL; ?>/inception/images/poedit.jpg" alt="PoEdit" class="img-responsive">
 
                 <p>Now you will only translate each line into your own language. Once you have finished save the file. You will see that a new
                     file has been created "mo" with the name of the po file edited.</p>

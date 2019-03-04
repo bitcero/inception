@@ -1,7 +1,7 @@
 <div class="mwitem_single" id="mwitem-<{$post.id}>">
     <{if $enable_images}>
     <div class="five columns alpha">
-        <a href="<{$post.link}>" title="<{$post.title}>"><img src="<{$xoops_imageurl}>include/thumbs.php?src=<{$post.image}>&w=276&h=196" alt="<{$post.title}>" class="post_image" /></a>
+        <a href="<{$post.link}>" title="<{$post.title}>"><img src="<{$xoops_imageurl}>include/thumbs.php?src=<{$post.image}>&w=276&h=196" alt="<{$post.title}>" class="post_image"></a>
     </div>
     <{/if}>
     <div class="<{if $enable_images}>seven columns omega<{else}>twelve columns<{/if}>">

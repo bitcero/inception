@@ -18,12 +18,12 @@
     <{if $socials}>
         <div class="mwbooks">
             <{foreach item=bm from=$socials}>
-                <a href="javascript:;" onclick="openWithSelfMain('<{$bm.url}>','marker',600,600);" title="<{$bm.alt}>"><img src="<{$xoops_url}>/modules/mywords/images/icons/<{$bm.icon}>" alt="<{$bm.alt}>" /></a>
+                <a href="javascript:;" onclick="openWithSelfMain('<{$bm.url}>','marker',600,600);" title="<{$bm.alt}>"><img src="<{$xoops_url}>/modules/mywords/images/icons/<{$bm.icon}>" alt="<{$bm.alt}>"></a>
             <{/foreach}>
         </div>
     <{/if}>
     <div class="mwtext">
-        <{if $enable_images}><img src="<{$post.image}>" alt="<{$post.title}>" class="full_post_image" /><{/if}>
+        <{if $enable_images}><img src="<{$post.image}>" alt="<{$post.title}>" class="full_post_image"><{/if}>
         <{$post.text}>
     </div>
     <div class="mwfoot">
